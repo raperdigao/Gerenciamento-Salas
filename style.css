@@ -1,0 +1,1111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200&display=swap');
+
+  /* font-family: 'Josefin Sans',
+  sans-serif;
+  font-family: 'Poppins',
+  sans-serif; */
+
+
+
+
+  :root {
+      --fundo: #6C757D;
+      --login: #17A2B8;
+      --senha: #FFC107;
+      --cadastro: #28A745;
+      --sala: #984040;
+      --texto: #FFFFFF;
+      --paragrafo: #FFFFFF;
+      --josefinsans:  'Josefin Sans', sans-serif;
+      --poppins:  'Poppins', sans-serif;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  body {}
+
+  /* Nesta etapa estilizei o container grid */
+  .container-grid {
+      max-width: 1920px;
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+
+  }
+
+
+
+  /* Estilizar o banner do header e o cabeçalho */
+
+  header {
+      height: auto;
+  }
+
+  .banner-flex {
+      background-image: url(Assets/img/Banner.png);
+      background-repeat: no-repeat;
+      height: 192.273px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  }
+
+
+  .titulo-header {
+      width: 100%;
+      margin-top: 130px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+
+
+  }
+
+  .titulo-senai h1 {
+      color: #FFF;
+      margin-left: 6.3px;
+      font-family: var(--josefinsans);
+      font-size: 36px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.8px;
+  }
+
+  .menu-navegacao {
+      margin-left: 40px;
+      width: 75%;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .menu-navegacao ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      text-transform: none;
+      list-style: none;
+
+
+  }
+
+  .menu-navegacao li {
+
+      color: #FFF;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2px;
+
+
+  }
+
+  .menu-navegacao ul li a {
+      text-decoration: none;
+      color: var(--texto);
+      font-family: var(--poppins);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+      background: #000000;
+      border-radius: 4px;
+      padding: 2px;
+      transition: 0.5s;
+  }
+
+
+
+
+
+
+  /* Estilizar telas do painel */
+
+  .dashboard-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: auto;
+
+
+
+  }
+
+  .dashboard {
+      display: flex;
+
+
+  }
+
+  /* Estilizar o titulo do dshboard */
+  .titulo-dashboard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .titulo-dashboard h1 {
+
+
+      margin-left: 6px;
+      color: #FFF;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+
+  }
+
+  .painel-salas-flex {
+
+      width: 60%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #6C757D;
+      flex-wrap: wrap;
+
+
+
+  }
+
+  .painel-setores {
+
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #6C757D;
+      flex-wrap: wrap;
+
+  }
+
+  .painel-salas {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+
+  }
+
+  .salas {
+      margin-top: 6px;
+      margin-right: 6px;
+      width: 110px;
+      height: 98px;
+      border: 2px solid #000000;
+      border-radius: 8px;
+      background-color: #F8F8F8;
+  }
+
+  #background-ocupado {
+      background-color: #984040;
+  }
+
+  .salas h1 {
+      color: #000;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: var(--josefinsans);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.48px;
+
+  }
+
+
+
+  /* Estilização das legendas */
+
+  .legenda-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+  }
+
+  .legenda-flex h1 {
+      color: #FFF;
+
+      text-align: center;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+  }
+
+
+  /* Criar estilizacao lista reserva */
+
+  .list-reserva {
+      background-color: #FFFFFF;
+      width: 100%;
+      margin-top: 20px;
+
+
+  }
+
+  .list-reserva h1 {
+      color: #000;
+      text-align: center;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+      margin-top: 10px;
+  }
+
+
+  /* Estilizar o cadastro das reservas */
+
+  .cad-reserva {
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+      border: 2px solid black;
+      background-color: #FFFFFF;
+      width: 100%;
+
+  }
+
+  .cad-reserva h2 {
+
+      margin-top: 10px;
+      color: #984040;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.48px;
+  }
+
+.cad-reserva input {
+    /* border-radius: 8px; */
+    outline: none;
+    margin-left: 80px;
+    font-family: var(--poppins);
+    font-weight: bold;
+    padding: 5px;
+    /* border: none; */
+    /* border-bottom: 2px solid black; */
+}
+
+.cad-reserva img {
+    cursor: pointer;
+}
+
+
+
+  /* Estilizar itens reserva */
+
+  .itens-reserva {
+      display: flex;
+      justify-content: flex-start;
+      gap: 55px;
+      background-color: #6C757D;
+      width: 100%;
+      height: 30%;
+  }
+
+  .itens-reserva h2 {
+      color: #FFF;
+
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.48px;
+  }
+
+  .img-edit-delete {
+
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      cursor: pointer;
+
+
+  }
+
+  .img-edit-delete img {
+      width: 24px;
+      height: 24px;
+  }
+
+  /* Estilizar listagem de salas */
+  .list-salas {
+      border: 2px solid white;
+      width: 40%;
+      height: auto;
+      background-color: #6C757D;
+  }
+
+  .list-salas H1 {
+      color: #000;
+      text-align: center;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+      background-color: #FFFFFF;
+
+  }
+
+  /* Estilizar os itens das salas */
+  .itens-salas {
+      border: 2px solid black;
+      display: flex;
+      gap: 70px;
+      background-color: #FFFFFF;
+
+
+
+  }
+
+  .itens-salas h2 {
+      color: #984040;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      letter-spacing: 0.48px;
+      text-transform: uppercase;
+
+
+  }
+
+  .cad-salas {
+      display: flex;
+      gap: 100px;
+      background-color: #6C757D;
+      height: 71.8%;
+
+
+
+
+  }
+
+  .cad-salas h2 {
+      color: #FFF;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+  }
+
+  .salas-edit-delete {
+
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .salas-edit-delete img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+  }
+
+  /* ESTILIZAÇÃO DE SALAS DE OCUPAÇÃO */
+
+
+
+  .ocupacao-salas-flex {
+      border: 1px solid black;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #FFFFFF;
+
+  }
+
+  .ocupacao-salas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .titulo-ocupacao-salas {
+      display: flex;
+      margin-bottom: 3px;
+
+  }
+
+  .titulo-ocupacao-salas h1 {
+      color: #000;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+
+  }
+
+  .painel-ocupacao-salas {
+      margin-bottom: 7px;
+      display: flex;
+      flex-direction: column;
+      width: 382px;
+      height: 78px;
+      border-radius: 8px;
+      background: #6C757D;
+
+  }
+
+  .painel-ocupacao-salas h1 {
+      background: #6C757D;
+      margin-top: 3px;
+      color: #FFF;
+      text-align: center;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+  }
+
+  .painel-ocupacao-salas h2 {
+      margin-top: 10px;
+      color: #FFF;
+      text-align: center;
+      font-family: var(--josefinsans);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+  }
+
+
+
+  /* Estilizar a tela de login */
+
+  .tela-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      height: auto;
+
+
+  }
+
+  .tela {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 2px solid black;
+
+
+  }
+
+  /* Estilizar a tela 01 */
+  .tela01 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      width: 30%;
+      height: 758px;
+
+
+  }
+
+  .tela01 h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      text-transform: uppercase;
+      color: #000;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      width: 60%;
+
+
+  }
+
+  /* Estilizar a tela 02 */
+
+  #legenda-flex h1 {
+      margin-left: 10px;
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: var(--josefinsans);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+  .tela02 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border: 1px solid black;
+      width: 70%;
+      height: 758px;
+      background-color: #6C757D;
+      border: 2px solid black;
+
+  }
+
+  .tela02 h1 {
+      margin-left: 10px;
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: var(--josefinsans);
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+  .tela02 h2 {
+      display: flex;
+
+      margin-left: 10px;
+      color: #FFF;
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }
+
+
+  /* Estilizar os formulario contato */
+
+  .form-contato-flex {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+  
+  .form-contato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    margin-left: 50px;
+   }
+
+.form-contato label {
+  margin-bottom: 10px;
+  color: #FFF;
+  font-family: var(--poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.form-contato input {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+
+}
+
+
+  /* Estilizar o formulário de login */
+
+
+  fieldset {
+      margin-top: 10px;
+      /* border: 1px solid black; */
+      width: 100%;
+      height: auto;
+
+  }
+
+  .form-flex {
+      margin-top: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: auto;
+
+  }
+
+
+
+  .form-cadastros {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+
+      width: 60%;
+      height: auto;
+  }
+
+
+/* Estilizar form acessibilidade */
+.form-acessibilidade {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
+.radio-acessibilidade-flex {
+    display: flex;
+    width: 66%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Estilizar form login */
+  .form-login {
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: auto;
+     
+      
+
+  }
+
+
+  .form-login label {
+
+      margin-bottom: 10px;
+      color: #FFF;
+      font-family: var(--poppins);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+  }
+
+  .form-login input {
+
+      width: 100px;
+      height: 30px;
+
+      border-radius: 8px;
+
+  }
+
+  /* Estilizar o radio flex */
+  .radio-flex {
+      display: flex;
+
+  }
+
+
+
+  /* Estilizar os ids dos inputs */
+
+  #resdocente {
+    width: 245px;
+  }
+  #ressala{
+    width: 245px;
+  }
+  #resdiciplina {
+    width: 245px;
+  }
+  #anoperiodo {
+    width: 150px;
+  }
+  #datainicio{
+    width: 150px;
+  }
+  #datafinal {
+    width: 150px;
+  }
+  #qtdalunos {
+    width: 245px;
+  }
+  #coddisciplina {
+    width: 245px;
+  }
+
+  #nomecontato {
+    width: 420px;
+
+  }
+
+  #sobrenomecontato {
+    width: 420px;
+
+  }
+
+  #emailcontato {
+
+    width: 420px;
+  }
+
+
+  #duvida {
+
+    width: 420px;
+  }
+
+#informacoes {
+    width: 420px;
+    border-radius: 8px;
+}
+
+#nomesala {
+    width: 420px;
+}
+
+#setorsala {
+
+    width: 420px;
+}
+
+#numerosala {
+
+    width: 420px;
+}
+
+  #fname {
+      width: 245px;
+  }
+
+  #lname {
+      width: 245px;
+  }
+
+  #email {
+      width: 245px;
+  }
+
+  #cpf {
+      width: 245px;
+  }
+
+  #celular {
+      width: 150px;
+  }
+  #nif {
+      width: 150px;
+  }
+  #disciplina {
+      width: 150px;
+  }
+
+  #cep {
+      width: 150px;
+  }
+
+  #bairro {
+      width: 150px;
+  }
+
+  #cidade {
+      width: 245px;
+  }
+
+  #endereco {
+      width: 245px;
+  }
+
+
+
+  #senha {
+      width: 245px;
+  }
+
+  #docente {
+      height: 20px;
+  }
+
+  #adm {
+      height: 20px;
+  }
+
+  #login {
+      width: 200px;
+  }
+
+  #password {
+      width: 162px;
+  }
+
+  /* Estilizar os botões */
+
+  .form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48%;
+      height: auto;
+  }
+
+  .botao-flex {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      
+      width: 50%;
+
+
+  }
+
+  /* Estilizando o botão login */
+  .button-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 420px;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid #000;
+      background: #17A2B8;
+      color: #FFF;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+  }
+
+  .button-login img {
+      width: 25px;
+      height: 25px;
+  }
+
+  /* Estilizando o botão senha */
+
+
+  .button-reset-senha {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 420px;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid #000;
+      background: #FFC107;
+      color: #FFF;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+      text-transform: none;
+      text-decoration: none;
+  }
+
+  .button-reset-senha a {
+      color: #FFF;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+  }
+
+  .button-reset-senha img {
+      width: 25px;
+      height: 25px;
+  }
+
+
+
+  /* Estilizando o botão cadastros */
+
+  .button-cadastros {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 420px;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid #000;
+      background: #28A745;
+      color: #FFF;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+
+  }
+
+  .button-cadastros a {
+      color: #FFF;
+      text-align: center;
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration: none;
+
+  }
+
+  .button-cadastros img {
+      width: 25px;
+      height: 25px;
+
+  }
+
+
+
+  /* Estilizar o footer do site */
+
+  .footer-banner-flex {
+      background-image: url(Assets/img/footer.png);
+      background-repeat: no-repeat;
+
+      height: 251.772px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+  }
+
+  .footer-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+
+
+
+  }
+
+  .painel-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 145px;
+      width: 100%;
+      height: auto;
+  }
+
+  .painel-footer-items {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 20px;
+
+
+  }
+
+  .painel-footer-items h1 {
+      margin-left: 20px;
+      color: #FFF;
+
+      font-family: var(--poppins);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.48px;
+
+  }
+
+  #qrcode {
+      width: 159px;
+      height: 120px;
+      flex-shrink: 0;
+  }
+
+  .painel-footer-items img {
+      width: 24px;
+      height: 24px;
+
+
+  }
